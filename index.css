@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --green: #5da130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--green);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .password-box {
+  position: relative;
+  height: 50px;
+}
+
+.password-box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 0 40px 0 15px;
+  background: transparent;
+letter-spacing:2px;
+}
+
+.password-box .copy {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.password-box .copy:hover {
+  color: var(--green);
+}
+
+.wrapper .range-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.range-box input {
+  width: 100%;
+  height: 5px;
+  accent-color: #5fae2a;
+  cursor: pointer;
+}
+
+.range-box .range-number {
+  min-width: 25px;
+  text-align: right;
+  font-size: 18px;
+  color: #333333;
+}
+
+.generate-btn {
+  width: 100%;
+  color: #ffffff;
+  padding: 12px 0;
+  margin-top: 20px;
+  background: var(--green);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.generate-btn:hover {
+  background-color: #499517;
+}
